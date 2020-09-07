@@ -43,7 +43,20 @@ menghapus package berikut ini :
   camera: ^0.5.8+2
   flutter_form_builder: ^3.12.3
   qr_code_scanner: 0.0.11
+``` 
+
+setelah itu di GeneratedPluginRegistrant,
+```    
+    ShimPluginRegistry shimPluginRegistry = new ShimPluginRegistry(flutterEngine);
+
 ```
+line diatas akan hilang. sehingga ketika mengulang step di HOW TO REPRODUCE, Headless Mode\
+akan sukses berjalan.
+
+
+
+
+
 
 
 

@@ -45,6 +45,9 @@ menghapus package berikut ini :
   qr_code_scanner: 0.0.11
 ``` 
 
+
+lalu jalankan ``pub get ``
+
 setelah itu di GeneratedPluginRegistrant,
 ```    
     ShimPluginRegistry shimPluginRegistry = new ShimPluginRegistry(flutterEngine);

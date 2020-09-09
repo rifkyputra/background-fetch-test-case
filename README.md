@@ -1,15 +1,13 @@
-# tesheadless
-
-A new Flutter project.
+# Error No Implementation Found on headless background_fetch
 
 
-issue : Headless gagal memanggil plugin sqflite (com.tekartik.sqflite).
+issue : failed to call plugin sqflite (com.tekartik.sqflite).
 
 ## UPDATE 
 Issue Solved See How To Solve
 
 
-## HOW TO REPRODUCE :
+## HOW TO REPRODUCE 
 `
 1. clone
 2. flutter run
@@ -29,7 +27,7 @@ di dalam contoh ini kita dapat sukses menjalankan headless mode dengan cara\
 MENGGANTI VERSI package berikut ini :
 
 ```
-  keyboard_visibility: ^0.5.3\
+  keyboard_visibility: 0.5.3
 ``` 
 
 

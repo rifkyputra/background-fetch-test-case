@@ -4,9 +4,17 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
 Future<void> headlessCallback(taskId) async {
-  final dbpath = await getDatabasesPath();
-  final path = join(dbpath, 'my.db');
-  await openDatabase(path);
+
+  try {
+    final dbpath = await getDatabasesPath();
+    final path = join(dbpath, 'my.db');
+    await openDatabase(path);
+    print('berhasil buka db !');
+  }catch(e) {
+    print('gagal buka db');
+    print(e);
+  }
+
   BackgroundFetch.finish(taskId);
 }
 
